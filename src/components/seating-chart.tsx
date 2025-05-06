@@ -2,7 +2,7 @@
 
 import type { Seat, Venue } from '@/types/event';
 import { cn } from '@/lib/utils';
-import { Armchair, MinusSquare, CheckSquare, ScreenIcon } from 'lucide-react';
+import { Armchair, MinusSquare, CheckSquare, TvIcon } from 'lucide-react';
 
 interface SeatingChartProps {
   venue: Venue;
@@ -83,9 +83,10 @@ export function SeatingChart({ venue, selectedSeats, bookedSeats, onSeatSelect }
         ))}
       </div>
       <div className="mt-4 sm:mt-6 p-2 sm:p-3 bg-primary/10 rounded-md text-center text-sm sm:text-base text-primary font-semibold flex items-center justify-center">
-        <ScreenIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-2" />
+        <TvIcon className="w-5 h-5 sm:w-6 sm:h-6 mr-2" />
         STAGE
       </div>
     </div>
   );
 }
+
